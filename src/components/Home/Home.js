@@ -4,13 +4,12 @@ import './Home.css'
 const Home = () => {
     return (
         <div className='home'>
-            <h1> This is from home!</h1>
-            <div>
+            <div className='carousel'>
                 <Carousel variant="dark">
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=First slide&bg=f5f5f5"
+                            src={require('../images/Banner-1.jpg')}
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -21,7 +20,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=eee"
+                            src={require('../images/Banner-2.jpg')}
                             alt="Second slide"
                         />
                         <Carousel.Caption>
@@ -32,7 +31,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+                            src={require('../images/Banner-3.jpg')}
                             alt="Third slide"
                         />
                         <Carousel.Caption>
@@ -41,6 +40,10 @@ const Home = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+            </div>
+
+            <div>
+                <h1>My Services</h1>
             </div>
         </div>
     );
