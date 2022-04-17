@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Button, Card, CardGroup, Carousel } from 'react-bootstrap';
 import './Home.css'
 const Home = () => {
     return (
@@ -44,8 +44,51 @@ const Home = () => {
 
             <div>
                 <h1>My Services</h1>
+                <div className='container services'>
+                    <CardGroup>
+                        <Card className='card'>
+                            <Card.Img variant="top" className='service-img' src={require("../images/travelGuide.jpg")} />
+                            <Card.Body>
+                                <Card.Title>Travel Guide</Card.Title>
+                                <Card.Text>
+                                    I am Ridoy Roy. One of the best travel guide in bangaldesh for foreign tourist.If you need an amazing guide please hire me!
+                                </Card.Text>
+                                <p>Price : $100 - $5000</p>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Checkout</Button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className='card'>
+                            <Card.Img variant="top" className='service-img' src={require("../images/hotelBooking.jpg")} />
+                            < Card.Body >
+                                <Card.Title>Hotel Booking</Card.Title>
+                                <Card.Text>
+                                    I will book the best hotel for you.Just tell me your desire requirments.I will able to you you best services within your budget.
+                                </Card.Text>
+                                <p>Price : $100 - $5000</p>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Checkout</Button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className='card'>
+                            <Card.Img variant="top" className='service-img' src={require("../images/Transport.jpg")} />
+                            <Card.Body>
+                                <Card.Title>Tranport Ticket</Card.Title>
+                                <Card.Text>
+                                    I will book transport ticket for you with 10% dicount.Because all transport system in bangaldesh give me this discout.So, I will able to proviide you a super ticket with less money!
+                                </Card.Text>
+                                <p>Price : $100 - $5000</p>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Checkout</Button>
+                            </Card.Footer>
+                        </Card>
+                    </CardGroup>
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -6,3 +6,13 @@
     width: 1200px;
     height: 500px;
 }
+
+/* CSS for Services  */
+.service-img {
+    width: 345px;
+    height: 200px;
+}
+
+.card {
+    margin: 20px;
+}
