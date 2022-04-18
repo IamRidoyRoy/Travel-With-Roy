@@ -17,7 +17,8 @@ const Header = () => {
                 <nav>
                     <Link to='/'>Home</Link>
 
-                    {/* <Link to='/register'>Register/Login</Link> */}
+                    <Link to='/blogs'>Blogs</Link>
+                    <Link to='/about'>About Me</Link>
 
                     {
                         user && <>
