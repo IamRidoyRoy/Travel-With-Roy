@@ -70,9 +70,8 @@ const Home = () => {
                                     user?.uid ?
                                         <Link to='/checkout'><Button>Checkout</Button></Link>
                                         :
-                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                        <Link to='/register'><Button>Checkout</Button></Link>
                                 }
-
 
                             </Card.Footer>
                         </Card>
@@ -90,7 +89,7 @@ const Home = () => {
                                     user?.uid ?
                                         <Link to='/checkout'><Button>Checkout</Button></Link>
                                         :
-                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                        <Link to='/register'><Button>Checkout</Button></Link>
                                 }
                             </Card.Footer>
                         </Card>
@@ -108,7 +107,7 @@ const Home = () => {
                                     user?.uid ?
                                         <Link to='/checkout'><Button>Checkout</Button></Link>
                                         :
-                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                        <Link to='/register'><Button>Checkout</Button></Link>
                                 }
                             </Card.Footer>
                         </Card>

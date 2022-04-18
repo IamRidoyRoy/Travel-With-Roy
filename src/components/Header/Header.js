@@ -17,7 +17,7 @@ const Header = () => {
                 <nav>
                     <Link to='/'>Home</Link>
 
-                    <Link to='/register'>Register</Link>
+                    {/* <Link to='/register'>Register/Login</Link> */}
 
                     {
                         user && <>
@@ -28,7 +28,7 @@ const Header = () => {
                         user?.uid ?
                             <button onClick={() => signOut(auth)}>Signout</button>
                             :
-                            <Link to='/login'>Login</Link>
+                            <Link to='/register'>Register/Login</Link>
                     }
                 </nav>
             </div>
