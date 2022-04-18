@@ -1,6 +1,6 @@
 # Travel With Roy
 
- [Live Link:](https://scintillating-sunburst-0b9681.netlify.app/).
+ [Live Link](https://scintillating-sunburst-0b9681.netlify.app/)
 
 ## About Project
 
