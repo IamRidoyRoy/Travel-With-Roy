@@ -1,7 +1,16 @@
+import { getAuth } from 'firebase/auth';
 import React from 'react';
 import { Button, Card, CardGroup, Carousel } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
+import app from '../../firebase.init';
 import './Home.css'
+
+
+const auth = getAuth(app)
 const Home = () => {
+
+    const [user] = useAuthState(auth)
     return (
         <div className='home'>
             <div className='carousel'>
@@ -56,7 +65,15 @@ const Home = () => {
                                 <p>Price : $100 - $5000</p>
                             </Card.Body>
                             <Card.Footer>
-                                <Button>Checkout</Button>
+
+                                {
+                                    user?.uid ?
+                                        <Link to='/checkout'><Button>Checkout</Button></Link>
+                                        :
+                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                }
+
+
                             </Card.Footer>
                         </Card>
                         <Card className='card'>
@@ -69,7 +86,12 @@ const Home = () => {
                                 <p>Price : $100 - $5000</p>
                             </Card.Body>
                             <Card.Footer>
-                                <Button>Checkout</Button>
+                                {
+                                    user?.uid ?
+                                        <Link to='/checkout'><Button>Checkout</Button></Link>
+                                        :
+                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                }
                             </Card.Footer>
                         </Card>
                         <Card className='card'>
@@ -82,7 +104,12 @@ const Home = () => {
                                 <p>Price : $100 - $5000</p>
                             </Card.Body>
                             <Card.Footer>
-                                <Button>Checkout</Button>
+                                {
+                                    user?.uid ?
+                                        <Link to='/checkout'><Button>Checkout</Button></Link>
+                                        :
+                                        <Link to='/login'><Button>Checkout</Button></Link>
+                                }
                             </Card.Footer>
                         </Card>
                     </CardGroup>
